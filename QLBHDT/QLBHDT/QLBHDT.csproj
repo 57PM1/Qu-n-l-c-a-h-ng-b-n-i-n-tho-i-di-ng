@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{888619A2-1DA4-4E11-A31B-A8E8813F1BF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLBHDT</RootNamespace>
+    <AssemblyName>QLBHDT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmQuanLyNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyNhaCungCap.Designer.cs">
+      <DependentUpon>frmQuanLyNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmQuanLyNhaCungCap.resx">
+      <DependentUpon>frmQuanLyNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyTaiKhoan.resx">
+      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{43ed2bcd-e568-4a53-b010-7b5dd4bf7456}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{b031a8b7-4e35-48a8-90a1-b4de19e7a6f2}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNhapDiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNhapDiem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnXemDiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnXemDiem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnXemDiem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DichVu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DichVu_Kenh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GiaoVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HoaDon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HocSinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HocSinh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HopDong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HuongDanSuDung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kenh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lophoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonHoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonHoc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonHoc11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhanVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhapDiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhapDiem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhapDiem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NienKhoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhanLop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quidinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sua1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sua2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Them.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Them1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Them2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thoat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thoat2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongKe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongKe1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xoa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xoa2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
