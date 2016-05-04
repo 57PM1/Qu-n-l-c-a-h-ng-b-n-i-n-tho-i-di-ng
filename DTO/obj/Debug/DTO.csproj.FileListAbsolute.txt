@@ -1,5 +1,0 @@
-E:\GitHub\DA_CSDLNC\QLBHDT\DTO\bin\Debug\DTO.dll
-E:\GitHub\DA_CSDLNC\QLBHDT\DTO\bin\Debug\DTO.pdb
-E:\GitHub\DA_CSDLNC\QLBHDT\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
-E:\GitHub\DA_CSDLNC\QLBHDT\DTO\obj\Debug\DTO.dll
-E:\GitHub\DA_CSDLNC\QLBHDT\DTO\obj\Debug\DTO.pdb

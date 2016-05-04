@@ -1,7 +1,0 @@
-E:\GitHub\DA_CSDLNC\QLBHDT\DAO\bin\Debug\DAO.dll
-E:\GitHub\DA_CSDLNC\QLBHDT\DAO\bin\Debug\DAO.pdb
-E:\GitHub\DA_CSDLNC\QLBHDT\DAO\bin\Debug\DTO.dll
-E:\GitHub\DA_CSDLNC\QLBHDT\DAO\bin\Debug\DTO.pdb
-E:\GitHub\DA_CSDLNC\QLBHDT\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
-E:\GitHub\DA_CSDLNC\QLBHDT\DAO\obj\Debug\DAO.dll
-E:\GitHub\DA_CSDLNC\QLBHDT\DAO\obj\Debug\DAO.pdb
