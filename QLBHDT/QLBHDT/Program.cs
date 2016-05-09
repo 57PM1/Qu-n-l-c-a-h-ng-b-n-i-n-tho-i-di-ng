@@ -16,7 +16,7 @@ namespace QLBHDT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQuanLyNhaCungCap());
+            Application.Run(new frmQuanLyNhanVien());
         }
     }
 }
